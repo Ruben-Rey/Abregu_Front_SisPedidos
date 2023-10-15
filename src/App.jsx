@@ -6,7 +6,7 @@ function App() {
   const [data, setData] = useState(null);
   
   useEffect(()=>{
-    fetch('http://0.0.0.0:8000/pedidosAll/')
+    fetch('http://127.0.0.1:8000/pedidosAll/')
     .then((response) => response.json())
     .then((data) => {
       console.log(data)
